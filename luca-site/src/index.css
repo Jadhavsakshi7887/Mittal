@@ -1,0 +1,25 @@
+/* Tailwind base layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+	--color-luca-blue: #2AA9E0;
+	--color-luca-dark: #0E2431;
+	--color-luca-orange: #FF8A00;
+	--color-luca-light: #F2FAFF;
+	--font-inter: "Inter", ui-sans-serif, system-ui;
+}
+
+/* Global styles for background grid and font */
+:root {
+	tab-size: 4;
+}
+
+body {
+	@apply font-inter text-luca-dark;
+	background-color: var(--color-luca-light);
+	background-image: radial-gradient(#DDEAF1 1px, transparent 1px);
+	background-size: 24px 24px;
+	background-attachment: fixed;
+}
